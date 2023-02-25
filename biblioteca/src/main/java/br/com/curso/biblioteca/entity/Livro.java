@@ -2,21 +2,29 @@ package br.com.curso.biblioteca.entity;
 
 import java.util.Date;
 
+import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-
+import jakarta.persistence.PrimaryKeyJoinColumn;
 
 @Entity
-@Table(name= "TB_EXEMPLAR_LIVRO")
+@Table(name = "TB_EXEMPLAR_LIVRO")
+@PrimaryKeyJoinColumn(name = "idObra")
 public class Livro extends ObraFisica {
+	
+	@Override
+	@Column(nullable = false)
+	public String getCodLocalizacao() {
+		return super.getCodLocalizacao();
+	}
 
 	@Column(nullable = false)
 	private String autor;
-
-	@Column(nullable = false)
+	
+	@Column(nullable = true)
 	private String isbn;
-
+	
+	
 	public Livro() {
 	}
 
@@ -33,7 +41,6 @@ public class Livro extends ObraFisica {
 	public String getIsbn() {
 		return isbn;
 	}
-
+	
+	
 }
-
-

@@ -9,26 +9,24 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
-import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name= "TB_EXEMPLAR_OBRA")
-@Inheritance(strategy = InheritanceType.JOINED)
-@OneToOne
-@PrimaryKeyJoinColumn(name = "idObra", referencedColumnName = "id")
-public abstract class Obra {
 
+@Entity
+@Table(name = "TB_EXEMPLAR_OBRA")
+@Inheritance(strategy = InheritanceType.JOINED)
+public abstract class Obra {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
-
+	
 	@Column(nullable = false)
 	protected String titulo;
-
+	
 	@Column(nullable = false)
 	protected Date dataPublicacao;
-
+	
 	public Obra() {
 	}
 
@@ -49,6 +47,6 @@ public abstract class Obra {
 	public Date getDataPublicacao() {
 		return dataPublicacao;
 	}
+	
+	
 }
-
-
