@@ -2,14 +2,19 @@ package br.com.curso.biblioteca.entity;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 
 @Entity
+@Table(name= "TB_POSTAGEM")
 public class Postagem extends ObraDigital {
 	
+	@Column(nullable = false)
 	private Enum plataforma;
 	
+	@Column(nullable = false)
 	private String conteudo;
 
 	

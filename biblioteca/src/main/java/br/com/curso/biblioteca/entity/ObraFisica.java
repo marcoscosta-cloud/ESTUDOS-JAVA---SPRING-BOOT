@@ -3,9 +3,13 @@ package br.com.curso.biblioteca.entity;
 import java.util.Date;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.PrimaryKeyJoinColumn;
+import jakarta.persistence.Table;
 
 
 @Entity
+@Table(name= "TB_EXEMPLAR_OBRA")
+@PrimaryKeyJoinColumn(name = "idObra")
 public abstract class ObraFisica extends Obra {
 
 	protected String codLocalizacao;
