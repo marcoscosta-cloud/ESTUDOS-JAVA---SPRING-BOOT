@@ -10,4 +10,18 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Inheritance"/>
     <fullyQualifiedTypeName name="jakarta.persistence.InheritanceType"/>
     <fullyQualifiedTypeName name="jakarta.persistence.PrimaryKeyJoinColumn"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Revista"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Postagem"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Professor"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Estudante"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Livro"/>
+    <fullyQualifiedTypeName name="br.com.curso.boblioteca.repository.LivroRepository"/>
 </qualifiedTypeNameHistroy>

@@ -1,5 +1,0 @@
-package br.com.curso.biblioteca.entity;
-
-public @interface OneToOne {
-
-}
