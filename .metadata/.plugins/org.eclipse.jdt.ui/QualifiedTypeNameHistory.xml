@@ -24,4 +24,6 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Livro"/>
     <fullyQualifiedTypeName name="br.com.curso.boblioteca.repository.LivroRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
 </qualifiedTypeNameHistroy>

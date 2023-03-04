@@ -12,11 +12,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import br.com.curso.biblioteca.entity.Livro;
-import br.com.curso.boblioteca.repository.LivroRepository;
+import br.com.curso.biblioteca.repository.LivroRepository;
 
 
 
 @SpringBootApplication
+
 public class BibliotecaApplication {
 	
 	public static final Logger log = LoggerFactory.getLogger(BibliotecaApplication.class);
@@ -32,7 +33,7 @@ public class BibliotecaApplication {
 				String autor = "Machado de Assis";
 				String codLocalizacao = "ABC123";
 				String isbn = "123456789";
-				Date dataPublicacao = (new SimpleDateFormat("DD/MM/YYYY")).parse("12/03/1879");
+				Date dataPublicacao = (new SimpleDateFormat("dd/MM/yyyy")).parse("12/03/1879");
 				
 				Livro livro = new Livro(null, titulo, dataPublicacao, codLocalizacao, autor, isbn);
 				livro = livroRepository.save(livro);
