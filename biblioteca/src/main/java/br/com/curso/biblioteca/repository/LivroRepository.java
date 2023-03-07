@@ -7,5 +7,8 @@ import br.com.curso.biblioteca.entity.Livro;
 
 @Repository
 public interface LivroRepository extends JpaRepository<Livro, Long> {
+	
+	//Pesquisando por palavras-chaves
+	public Livro findByIsbn(String isbn);
 
 }

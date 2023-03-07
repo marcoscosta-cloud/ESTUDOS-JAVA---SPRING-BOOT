@@ -29,6 +29,9 @@ public class BibliotecaApplication {
 		@Bean
 		public CommandLineRunner executar(LivroRepository livroRepository) {
 			return(args) -> {
+				//Apagando todos os livros
+				livroRepository.deleteAll();
+				
 				String titulo = "Dom Casmurro";
 				String autor = "Machado de Assis";
 				String codLocalizacao = "ABC123";
@@ -38,6 +41,10 @@ public class BibliotecaApplication {
 				Livro livro = new Livro(null, titulo, dataPublicacao, codLocalizacao, autor, isbn);
 				livro = livroRepository.save(livro);
 				log.info("Livro Cadastrado:");
+				log.info(livro.toString());
+				
+				log.info("Pesquisando um livro pelo ISBN...");
+				livro = livroRepository.findByIsbn(isbn);
 				log.info(livro.toString());
 			};
 		}
