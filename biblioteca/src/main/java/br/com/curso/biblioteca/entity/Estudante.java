@@ -26,4 +26,10 @@ public class Estudante extends Usuario {
 		return matricula;
 	}
 
+	@Override
+	public String toString() {
+		return "Estudante [id=" + id + ", nome=" + nome + ", rg=" + rg + ", email=" + email + ", matricula=" + matricula
+				+ "]";
+	}
+
 }

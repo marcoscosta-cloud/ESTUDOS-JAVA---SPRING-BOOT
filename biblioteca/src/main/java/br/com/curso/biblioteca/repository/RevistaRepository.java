@@ -7,5 +7,7 @@ import br.com.curso.biblioteca.entity.Revista;
 
 @Repository
 public interface RevistaRepository extends JpaRepository<Revista, Long> {
+	//Pesquisando por palavras-chaves
+	public Revista findByNumero(Integer numero);
 
 }

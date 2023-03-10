@@ -32,5 +32,11 @@ public class Revista extends ObraFisica {
 	public Integer getNumero() {
 		return numero;
 	}
+
+	@Override
+	public String toString() {
+		return "Revista [id=" + id + ", titulo=" + titulo + ", dataPublicacao=" + dataPublicacao + ", codLocalizacao="
+				+ codLocalizacao + ", numero=" + numero + "]";
+	}
 		
 }

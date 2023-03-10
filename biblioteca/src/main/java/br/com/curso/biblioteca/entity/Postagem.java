@@ -11,24 +11,23 @@ import jakarta.persistence.Table;
 @Table(name = "TB_POSTAGEM")
 @PrimaryKeyJoinColumn(name = "idObra")
 public class Postagem extends ObraDigital {
-	
-	
+
 	@Override
 	@Column(nullable = false)
 	public String getUrl() {
 		return super.getUrl();
 	}
-	
+
 	@Column(nullable = false)
 	private Enum plataforma;
-	
+
 	@Column(nullable = false)
 	private String conteudo;
-	
+
 	public Postagem() {
 	}
-	
-	public Postagem(Long id, String titulo, Date dataPublicacao, String url, Enum plataforma,String conteudo) {
+
+	public Postagem(Long id, String titulo, Date dataPublicacao, String url, Enum plataforma, String conteudo) {
 		super(id, titulo, dataPublicacao, url);
 		this.plataforma = plataforma;
 		this.conteudo = conteudo;
@@ -42,8 +41,11 @@ public class Postagem extends ObraDigital {
 	public String getConteudo() {
 		return conteudo;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Postagem [id=" + id + ", titulo=" + titulo + ", dataPublicacao=" + dataPublicacao + ", url=" + url
+				+ ", conteudo=" + conteudo + ", plataforma=" + plataforma + "]";
+	}
+
 }

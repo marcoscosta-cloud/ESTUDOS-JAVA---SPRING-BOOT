@@ -7,5 +7,8 @@ import br.com.curso.biblioteca.entity.Professor;
 
 @Repository
 public interface ProfessorRepository extends JpaRepository<Professor, Long> {
+	
+	//Pesquisando por palavras-chaves
+			public Professor findByTitulacao(String titulacao);
 
 }

@@ -7,5 +7,7 @@ import br.com.curso.biblioteca.entity.Postagem;
 
 @Repository
 public interface PostagemRepository extends JpaRepository<Postagem, Long> {
+	//Pesquisando por palavras-chaves
+	public Postagem findByConteudo(String conteudo);
 
 }
