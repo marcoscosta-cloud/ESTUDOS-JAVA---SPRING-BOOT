@@ -30,4 +30,7 @@
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Revista"/>
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.repository.PostagemRepository"/>
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Postagem"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.enums.PlataformaDigital"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
 </qualifiedTypeNameHistroy>

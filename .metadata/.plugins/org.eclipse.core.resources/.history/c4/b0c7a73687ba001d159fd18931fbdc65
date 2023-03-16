@@ -1,5 +1,0 @@
-package br.com.curso.boblioteca.repository;
-
-public interface LivroRepository {
-
-}
