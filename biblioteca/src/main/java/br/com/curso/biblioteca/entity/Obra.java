@@ -10,23 +10,25 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
-
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "TB_EXEMPLAR_OBRA")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Obra {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
-	
+
 	@Column(nullable = false)
 	protected String titulo;
-	
+
 	@Column(nullable = false)
+	@Temporal(TemporalType.DATE)
 	protected Date dataPublicacao;
-	
+
 	public Obra() {
 	}
 
@@ -47,6 +49,5 @@ public abstract class Obra {
 	public Date getDataPublicacao() {
 		return dataPublicacao;
 	}
-	
-	
+
 }

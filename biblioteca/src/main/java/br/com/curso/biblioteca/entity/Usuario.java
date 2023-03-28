@@ -11,7 +11,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.NamedQueries;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.OneToMany;
+
+@NamedQueries({ @NamedQuery(name = "buscaTodosUsuariosPorOrdemAlfabetica", query = "FROM Usuario ORDER BY nome"),
+		@NamedQuery(name = "buscaTodosUsuariosPorOrdemDeId", query = "FROM Usuario ORDER BY id") })
 
 @Entity
 @Table(name = "TB_USUARIO")

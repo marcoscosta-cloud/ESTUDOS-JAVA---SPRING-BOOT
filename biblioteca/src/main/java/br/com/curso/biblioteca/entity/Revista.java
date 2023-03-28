@@ -11,14 +11,8 @@ import jakarta.persistence.Table;
 @Table(name = "TB_EXEMPLAR_REVISTA")
 @PrimaryKeyJoinColumn(name = "idObra")
 public class Revista extends ObraFisica {
-	
-	@Override
+
 	@Column(nullable = false)
-	public String getCodLocalizacao() {
-		return super.getCodLocalizacao();
-	}
-	
-	@Column(nullable = true)
 	private Integer numero;
 
 	public Revista() {
@@ -33,10 +27,4 @@ public class Revista extends ObraFisica {
 		return numero;
 	}
 
-	@Override
-	public String toString() {
-		return "Revista [id=" + id + ", titulo=" + titulo + ", dataPublicacao=" + dataPublicacao + ", codLocalizacao="
-				+ codLocalizacao + ", numero=" + numero + "]";
-	}
-		
 }

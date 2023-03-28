@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="br.com.curso.boblioteca.repository.LivroRepository"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.domain.EntityScan"/>
@@ -30,7 +29,18 @@
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Revista"/>
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.repository.PostagemRepository"/>
     <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Postagem"/>
-    <fullyQualifiedTypeName name="br.com.curso.biblioteca.enums.PlataformaDigital"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.enums.PlataformaDigital"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Emprestimo"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.repository.UsuarioRepository"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.com.curso.biblioteca.entity.Usuario"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedQueries"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedNativeQueries"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedNativeQuery"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Temporal"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.TemporalType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

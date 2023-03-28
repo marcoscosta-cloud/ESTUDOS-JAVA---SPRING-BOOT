@@ -1,14 +1,11 @@
 package br.com.curso.biblioteca.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import br.com.curso.biblioteca.entity.Estudante;
 
+public interface EstudanteRepository extends UsuarioRepository {
 
-@Repository
-public interface EstudanteRepository extends JpaRepository<Estudante, Long> {
+	public Estudante findByMatricula(String matricula);
 
-	//Pesquisando por palavras-chaves
-		public Estudante findByRgAndMatricula(String rg, String matricula);
+
 }
